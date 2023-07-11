@@ -23,7 +23,7 @@
   --bright-yellow-crayola: hsl(40, 100%, 50%);
   --medium-turquoise: hsl(172, 48%, 59%);
   --silver-chalice: hsl(0, 0%, 70%);
-  --eerie-black-1: hsl(0, 0%, 13%);
+  --eerie-black-1: hsl(0, 0%, 0%);
   --eerie-black-2: hsl(0, 0%, 15%);
   --eerie-black-3: hsl(228, 10%, 10%);
   --raisin-black: hsl(220, 8%, 14%);
@@ -202,7 +202,7 @@ body {
 }
 
 .paragraph-indent {
-  padding-left: 100px;
+  padding-left: 60px;
 }
 
 .btn {
@@ -279,6 +279,12 @@ body {
   z-index: 4;
 }
 
+.header-name {
+  display: flex;
+  flex-direction: column;
+  color: var(--bright-yellow-crayola);
+}
+
 .header::after {
   content: "";
   position: absolute;
@@ -320,8 +326,8 @@ body {
 
 .logo-image {
   margin-right: 1em;
-  width: 36px;
-  height: 36px;
+  width: 75px;
+  height: 75px;
 }
 
 .nav-open-btn {
