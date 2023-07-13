@@ -275,7 +275,7 @@ body {
   left: 0;
   width: 100%;
   background-color: transparent;
-  padding-block: 18px;
+  padding-block: 8px;
   z-index: 4;
 }
 
@@ -326,8 +326,8 @@ body {
 
 .logo-image {
   margin-right: 1em;
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
 }
 
 .nav-open-btn {
@@ -1391,7 +1391,7 @@ body {
   .navbar > .logo,
   .navbar-link > ion-icon { display: none; }
 
-  .header { padding-block: 25px; }
+  .header { padding-block: 18px; }
 
   .lang-switch {
     position: relative;
