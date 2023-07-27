@@ -228,7 +228,7 @@ body {
 
 .btn-secondary { --btn-bg: var(--black); }
 
-.btn-secondary:is(:hover, :focus) { --btn-bg: var(--bright-yellow-crayola); }
+.btn-secondary:is(:hover, :focus) { --btn-bg: var(--bright-yellow-crayola); color: var(--black); }
 
 .btn-outline {
   border: 2px solid var(--white);
