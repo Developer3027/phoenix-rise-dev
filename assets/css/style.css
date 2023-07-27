@@ -13,7 +13,7 @@
    * colors
    */
 
-  --bright-yellow-crayola: hsl(40, 100%, 50%);
+  --bright-yellow-crayola: hsl(50.6,50%,60%);
   --medium-turquoise: hsl(172, 48%, 59%);
   --silver-chalice: hsl(0, 0%, 70%);
   --eerie-black-1: hsl(0, 0%, 0%);
@@ -248,8 +248,9 @@ body {
 
 .img-cover {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 
@@ -755,11 +756,16 @@ body {
 .testimonial-hero {
   height: 100vh;
   width: 100%;
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial-hero, h2 {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .testimonial-hero, h2, h3 {
@@ -856,6 +862,23 @@ body {
 .img-hidden {
   display: none;
 }
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
+.testimonial-quote {
+  width: 600px;
+  padding: 1rem;
+}
+
+.testi-swip-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* .testi { background-color: var(--jet); }
 

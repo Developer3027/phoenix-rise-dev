@@ -12,9 +12,13 @@
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
     <!--
-    - custom css link
+    - css link
   -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
     <!--
     - google font link
@@ -335,12 +339,12 @@
 
             <div class="about-content">
               <p class="section-subtitle">
-                <img
+                <!-- <img
                   src="./assets/images/subtitle-img-yellow.png"
                   width="32"
                   height="7"
                   alt="Wavy line"
-                />
+                /> -->
 
                 <span>Why Choose Phoenix Foundation</span>
               </p>
@@ -457,12 +461,12 @@
         >
           <div class="container">
             <p class="section-subtitle">
-              <img
+              <!-- <img
                 src="./assets/images/subtitle-img-yellow.png"
                 width="32"
                 height="7"
                 alt="Wavy line"
-              />
+              /> -->
 
               <span>What We Do</span>
             </p>
@@ -843,7 +847,60 @@
 
         <section class="testimonial-hero" id="testimonial">
           <h2>Testimonials</h2>
-          <div class="testimonial-container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="testi-swip-wrap">
+                  <figure class="testimonial-figure">
+                    <img
+                      src="./assets/images/FullSizeRender.jpg"
+                      loading="lazy"
+                      alt="Rhinoceros"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <blockquote class="testimonial-quote">
+                    On a Saturday in February 2022, Stephanie visited, Faith
+                    Presbyterian Church in Indian Land, SC, seeking assistance
+                    for the victims of the Kentucky tornado. Motivated to offer
+                    immediate support, we collected essential items for three
+                    weeks and delivered them to Stephanie's office for
+                    transportation to Kentucky. Stephanie's presence has been a
+                    blessing in my life and the life of our church.
+                  </blockquote>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testi-swip-wrap">
+                  <figure class="testimonial-figure">
+                    <img
+                      src="./assets/images/craigpatterson.jpg"
+                      loading="lazy"
+                      alt="Rhinoceros"
+                      class="img-cover"
+                    />
+                  </figure>
+                  <blockquote class="testimonial-quote">
+                    Stephanie reached out to me, after our state and three others were hit by an EF4 tornado on Dec 10, 2021. Stephanie needed suggestions, and information as she was single handedly bringing supplies for the victims. She drove 1000 miles round trip twice in one week to bring much needed help to Kentucky. I've never met anyone willing to do so much for people that she doesn't know. We have kept in touch, and I consider Steph a good friend now.
+                  </blockquote>
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 3</div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+          <!-- <div class="testimonial-container">
             <div class="testimonial-indicator">
               <span class="li-btn li-active"></span>
               <span class="li-btn"></span>
@@ -900,7 +957,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
 
         <!-- <section class="testi" id="testimonial">
@@ -1306,6 +1363,9 @@
         </p>
       </div>
     </footer>
+
+    <!-- Swiper scripts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!--
     - custom js link
