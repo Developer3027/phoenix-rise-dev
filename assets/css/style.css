@@ -13,7 +13,8 @@
    * colors
    */
 
-  --bright-yellow-crayola: hsl(50.6,50%,60%);
+  --bright-yellow-crayola: hsl(50.7,87.4%,37.5%);
+  --bright-gold: hsl(50.5, 87.8%, 45.1%);
   --medium-turquoise: hsl(172, 48%, 59%);
   --silver-chalice: hsl(0, 0%, 70%);
   --eerie-black-1: hsl(0, 0%, 0%);
@@ -201,13 +202,14 @@ body {
 .btn {
   position: relative;
   background-color: var(--btn-bg, var(--bright-yellow-crayola));
-  color: var(--white);
+  color: var(--eerie-black-1);
   font-weight: var(--fw-600);
   padding: 12px 32px;
   display: flex;
   align-items: center;
   gap: 10px;
   transition: var(--transition-2);
+  border-radius: 3px;
 }
 
 .btn ion-icon {
@@ -215,16 +217,17 @@ body {
   font-size: 1.8rem;
 }
 
-.btn:not(.btn-outline)::after {
-  content: "";
+.btn:hover {
+  background-color: var(--btn-bg, var(--bright-gold));
+  /* content: "";
   position: absolute;
   inset: 0;
   border: 1px solid var(--btn-bg, var(--bright-yellow-crayola));
-  transform: translate(5px, 5px);
-  transition: var(--transition-2);
+  transform: translate(5px, 5px); */
+
 }
 
-.btn:is(:hover, :focus)::after { transform: translate(0, 0); }
+.btn:is(:hover, :focus)::after { transition: var(--transition-2); }
 
 .btn-secondary { --btn-bg: var(--black); }
 
@@ -278,7 +281,7 @@ body {
 .header-name {
   display: flex;
   flex-direction: column;
-  color: var(--bright-yellow-crayola);
+  color: var(--bright-gold);
 }
 
 .header::after {
@@ -488,7 +491,7 @@ body {
   #ABOUT
 \*-----------------------------------*/
 
-.about { padding-block-start: 120px; }
+.about { padding-block-start: 15rem; }
 
 .about-banner {
   position: relative;
@@ -879,6 +882,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.testi-img {
+  margin-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 
