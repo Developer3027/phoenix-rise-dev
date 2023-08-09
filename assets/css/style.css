@@ -702,14 +702,14 @@ body {
 \*-----------------------------------*/
 
 .testimonial-hero {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   /* position: relative; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .testimonial-hero, h2 {
