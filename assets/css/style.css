@@ -1,9 +1,4 @@
 /*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -83,10 +78,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -154,10 +145,6 @@ body {
 
 ::-webkit-scrollbar-thumb { background-color: var(--bright-yellow-crayola); }
 
-
-
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -219,12 +206,6 @@ body {
 
 .btn:hover {
   background-color: var(--btn-bg, var(--bright-gold));
-  /* content: "";
-  position: absolute;
-  inset: 0;
-  border: 1px solid var(--btn-bg, var(--bright-yellow-crayola));
-  transform: translate(5px, 5px); */
-
 }
 
 .btn:is(:hover, :focus)::after { transition: var(--transition-2); }
@@ -257,9 +238,6 @@ body {
   border-radius: 20px;
   padding: 1rem;
 }
-
-
-
 
 /*-----------------------------------*\
   #HEADER
@@ -402,10 +380,6 @@ body {
 
 .navbar-link:is(:hover, :focus) { background-color: var(--bright-yellow-crayola); }
 
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -416,6 +390,13 @@ body {
   min-height: 700px;
   padding-block: 120px 60px;
   display: grid;
+  align-items: center;
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -437,15 +418,12 @@ body {
   letter-spacing: -1px;
   max-width: 50ch;
   margin-block-end: 30px;
+  text-align: center;
 }
 
 .hero-highlight {
   color: var(--bright-yellow-crayola);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #FEATURES
@@ -482,10 +460,6 @@ body {
   color: var(--white_50);
   font-size: var(--fs-9);
 }
-
-
-
-
 
 /*-----------------------------------*\
   #ABOUT
@@ -568,37 +542,6 @@ body {
   font-size: var(--fs-8);
   font-weight: var(--fw-500);
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
-.cta-content {
-  background-color: var(--bright-yellow-crayola);
-  text-align: center;
-  padding: 50px 15px;
-  margin-block-end: 30px;
-}
-
-.cta .section-title {
-  color: var(--white);
-  font-size: var(--fs-4);
-  font-weight: var(--fw-600);
-  line-height: 1.2;
-  margin-block-end: 25px;
-}
-
-.cta .btn-outline { margin-inline: auto; }
-
-.cta-banner { background-color: var(--light-gray); }
-
-
-
-
 
 /*-----------------------------------*\
   #SERVICE
@@ -875,7 +818,7 @@ body {
 }
 
 .testimonial-quote {
-  width: 75%;
+  width: 72%;
 }
 
 .testi-swip-wrap {
