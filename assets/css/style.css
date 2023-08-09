@@ -818,7 +818,8 @@ body {
 }
 
 .testimonial-quote {
-  width: 50%;
+  width: 60%;
+  padding-bottom: 1rem;
 }
 
 .testi-swip-wrap {
