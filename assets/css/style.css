@@ -818,7 +818,7 @@ body {
 }
 
 .testimonial-quote {
-  width: 72%;
+  width: 50%;
 }
 
 .testi-swip-wrap {
@@ -1222,6 +1222,10 @@ body {
   .img-cover {
     display: block;
     padding: 1rem;
+  }
+
+  .testimonial-quote {
+    width: 68%;
   }
 
 
