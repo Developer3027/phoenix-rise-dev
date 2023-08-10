@@ -678,12 +678,14 @@ body {
   padding-bottom: 1rem;
 }
 
-.swiper-button-prev {
+.testi-button-prev {
   margin-left: 2rem;
+  color: var(--raisin-black) !important;
 }
 
-.swiper-button-next {
+.testi-button-next {
   margin-right: 2rem;
+  color: var(--raisin-black) !important;
 }
 
 /*-----------------------------------*\
